@@ -9,21 +9,18 @@ const Navbar = () => {
   const [oppen, setOppen] = useState(false);
   return (
     <nav className=" relative ">
-      <div className=" flex justify-between items-center px-5 md:px-9 lg:px-5 xl:px-10 py-6 lg:py-8 xl:pb-2 xl:pt-8">
+      <div className=" flex justify-between items-center px-5 md:px-9 lg:px-5 xl:px-10 py-6 lg:py-8 xl:pb-2 xl:pt-5">
         <div className="">
           <Image src={logo} alt="logo" className=" w-20 " />
         </div>
 
-        <div className="hidden lg:block">
-          <h2></h2>
-        </div>
-        <div className=" hidden lg:block ">
-          <ul className="logo flex gap-3 items-center lg:ml-20">
+        <div className=" hidden lg:block ml-28 ">
+          <ul className=" flex gap-3 items-center ">
             {["Home", "About", "News", "Contact"].map((item, index) => (
               <li key={index}>
                 <Link
                   href="/home"
-                  className="text-primary font-Roboto text-sm hover:text-gray-300 transition-all"
+                  className="text-primary font-Roboto text-base font-semibold uppercase hover:text-gray-300 transition-all"
                 >
                   {item}
                 </Link>
@@ -31,7 +28,11 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-
+        <div className="hidden lg:block">
+          <h2 className=" font-roboto text-sm text-secondary  mt-2 uppercase">
+            A creative agency based in Helsinki.
+          </h2>
+        </div>
         <div className=" lg:hidden">
           <button onClick={() => setOppen(!oppen)}>
             <svg

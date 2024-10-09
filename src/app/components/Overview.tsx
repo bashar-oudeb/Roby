@@ -1,30 +1,30 @@
 const Overview = () => {
   return (
-    <section className=" pt-16 px-4">
-      <div className=" ">
-        <h1 className=" font-roboto text-primary font-bold text-4xl text-center">
+    <section className=" pt-16 lg:pt-24 px-4">
+      <div className="lg:px-4 ">
+        <h1 className=" font-roboto text-primary font-bold text-4xl text-center lg:text-start">
           THE PERFECT
         </h1>
-        <h6 className=" mt-2 text-3xl font-roboto text-primary  text-center ">
+        <h6 className=" mt-2 text-3xl font-roboto text-primary  text-center lg:text-start ">
           AGENCY FOR YOUR BRAND
         </h6>
       </div>
-      <div className=" pt-10">
-        <div className="">
-          <p className=" font-roboto text-secondary text-base leading-5 md:w-2/4 md:text-center md:mx-auto ">
+      <div className=" pt-10 lg:flex lg:gap-10 ">
+        <div className="lg:px-4 lg:w-2/4">
+          <p className=" font-roboto text-secondary text-base leading-5 md:w-2/4 lg:w-full md:text-center md:mx-auto lg:text-start lg:mx-0 ">
             We love what we do and create partnerships with our clients to
             ensure their digital transformation is positioned for long-term
             success.
           </p>
-          <p className=" mt-4 font-roboto text-secondary text-base leading-5 md:w-2/4 md:text-center md:mx-auto ">
+          <p className=" mt-4 font-roboto text-secondary text-base leading-5 md:w-2/4 lg:w-full md:text-center md:mx-auto lg:text-start lg:mx-0 ">
             We believe that the human dimensions essential to start any
             successful project and that this is where splendid emotional
             relationships between the company and people are born.
           </p>
         </div>
 
-        <div className=" pt-10 ">
-          <div className=" md:w-2/4 md:mx-auto">
+        <div className=" pt-10 lg:w-2/4">
+          <div className=" md:w-2/4 lg:w-2/3   md:mx-auto">
             <div className=" flex items-center justify-between">
               <h1 className=" font-roboto font-bold text-lg ">Awwards</h1>
               <span className=" font-roboto font-bold text-lg"> 14</span>
@@ -64,7 +64,7 @@ const Overview = () => {
             </div>
           </div>
 
-          <div className=" pt-10  md:w-2/4 md:mx-auto">
+          <div className=" pt-10  md:w-2/4 lg:w-2/3   md:mx-auto ">
             <div className=" flex items-center justify-between">
               <h1 className=" font-roboto font-bold text-lg ">
                 CSS Design Awards

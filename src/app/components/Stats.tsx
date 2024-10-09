@@ -7,11 +7,11 @@ const Stats = () => {
   return (
     <section className=" pt-16">
       <div className="">
-        <h1 className=" font-roboto font-bold text-4xl text-center uppercase">
+        <h1 className=" font-roboto font-bold text-4xl lg:text-5xl  text-center uppercase">
           Fun <span className=" font-normal "> facts</span>
         </h1>
       </div>
-      <div className=" pt-10 px-4 grid grid-cols-2  items-center">
+      <div className=" pt-10 px-4 grid grid-cols-2 lg:grid-cols-4  items-center">
         <div className="">
           <div className=" flex items-center justify-center gap-1">
             <Image src={img} alt="" />

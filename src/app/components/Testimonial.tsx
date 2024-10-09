@@ -11,13 +11,13 @@ import img3 from "../assets/landingPage/Testimonial/img.png";
 
 const Testimonial = () => {
   return (
-    <section className=" pt-16 px-4">
+    <section className=" pt-16 lg:mt-24 px-4">
       <div className="">
         <h1 className="font-roboto font-bold text-4xl text-center uppercase">
           What <span className=" font-normal text-3xl"> they</span> think
         </h1>
       </div>
-      <Swiper
+      <Swiper 
         spaceBetween={30}
         pagination={{ clickable: true }}
         modules={[Pagination]}
@@ -37,7 +37,7 @@ const Testimonial = () => {
         }}
       >
         <SwiperSlide>
-          <div className=" pt-10">
+          <div className=" pt-10 ">
             <div className=" flex items-center gap-3 justify-center">
               <div className=" mt-4">
                 <Image src={img} alt="" className=" mx-auto" />
@@ -50,7 +50,7 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <p className="pt-3 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
+            <p className="pt-3 lg:pt-5 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
               &quot;The public is more familiar with bad design than good
               design. It is, in effect, conditioned to prefer bad design,
               because that is what it lives with.&quot;
@@ -72,7 +72,7 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <p className="pt-3 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
+            <p className="pt-3 lg:pt-5 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
               &quot;The public is more familiar with bad design than good
               design. It is, in effect, conditioned to prefer bad design,
               because that is what it lives with.&quot;
@@ -94,7 +94,29 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <p className="pt-3 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
+            <p className="pt-3 lg:pt-5 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
+              &quot;The public is more familiar with bad design than good
+              design. It is, in effect, conditioned to prefer bad design,
+              because that is what it lives with.&quot;
+            </p>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className=" pt-10">
+            <div className=" flex items-center gap-3 justify-center">
+              <div className=" mt-4   w-[73px] h-[73px]">
+                <Image src={img2} alt="" className=" w-full h-full object-cover " />
+              </div>
+              <div className="">
+                <h3 className="mt-3 font-roboto text-base ">Matthew Webster</h3>
+                <p className="  font-roboto text-sm text-secondary">
+                  Webflow Founder
+                </p>
+              </div>
+            </div>
+
+            <p className="pt-3 lg:pt-5 pb-10 font-roboto text-base leading-5 text-primary font-semibold text-center">
               &quot;The public is more familiar with bad design than good
               design. It is, in effect, conditioned to prefer bad design,
               because that is what it lives with.&quot;
